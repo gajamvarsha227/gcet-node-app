@@ -28,7 +28,7 @@ app.get("/products", (req, res)=>{
   const products=[
     {name: "Product1", price:45},
     {name: "Product2", price:50},
-    {name: "Product3", price:60},
+    {name: "Product3", price:70},
   ];
   res.json(products);
 })
