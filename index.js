@@ -31,4 +31,4 @@ app.get("/products", (req, res)=>{
     {name: "Product3", price:70},
   ];
   res.json(products);
-})
+});
