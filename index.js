@@ -17,6 +17,7 @@ const DBPASS = encodeURIComponent(process.env.DBPASS)
 const MONGODB_URI =`mongodb+srv://${DBUSER}:${DBPASS}@cluster0.qjxhv.mongodb.net/gcet?retryWrites=true&w=majority&appName=Cluste`
 
 // const MONGO_URI = process.env.MONGO_URI
+//testing api
 //testing
 app.use("/users", userRouter);
 app.use("/products", productRouter);
@@ -26,7 +27,7 @@ mongoose
   .connect(MONGO_URI)
   .then(() => {
     app.listen(8080, () => {
-      console.log("Server Started on port 8080");
+      console.log("Server Started on port 8080 ");
     });
   })
   .catch((error) => {
