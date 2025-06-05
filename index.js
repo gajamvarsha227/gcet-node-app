@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
-
+//testing
 const DBUSER = encodeURIComponent(process.env.DBUSER)
 const DBPASS = encodeURIComponent(process.env.DBPASS)
 const MONGODB_URI =`mongodb+srv://${DBUSER}:${DBPASS}@cluster0.hibtckh.mongodb.net/gcet?retryWrites=true&w=majority&appName=Cluster0`
