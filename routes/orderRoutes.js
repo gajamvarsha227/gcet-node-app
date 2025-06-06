@@ -11,7 +11,7 @@ orderRouter.get("/:id", async (req, res) => {
 
 orderRouter.post("/new", async (req, res) => {
   const {email, orderValue} = req.body;
-  const result= orderModel.insertOne({email, orderValue});
+  const result= await orderModel.create({email, orderValue});
   return res.json(result);
 });
 
